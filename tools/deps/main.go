@@ -21,32 +21,32 @@ var (
 			subGroups: []*Group{
 				{
 					name:     "cli",
-					path:     "bitbucket.org/kamiazya/tcho-cli",
+					path:     "bitbucket.org/kamiazya/tcho/cli",
 					packages: []string{},
 					subGroups: []*Group{
 						{
 							name:     "adapter",
-							path:     "bitbucket.org/kamiazya/tcho-cli/adapter",
+							path:     "bitbucket.org/kamiazya/tcho/cli/adapter",
 							packages: []string{},
 						},
 						// {
 						// 	name:     "extarnal",
-						// 	path:     "bitbucket.org/kamiazya/tcho-cli/extarnal",
+						// 	path:     "bitbucket.org/kamiazya/tcho/cli/extarnal",
 						// 	packages: []string{},
 						// },
 						{
 							name:     "module",
-							path:     "bitbucket.org/kamiazya/tcho-cli/module",
+							path:     "bitbucket.org/kamiazya/tcho/cli/module",
 							packages: []string{},
 							subGroups: []*Group{
 								{
 									name:     "local",
-									path:     "bitbucket.org/kamiazya/tcho-cli/module/local",
+									path:     "bitbucket.org/kamiazya/tcho/cli/module/local",
 									packages: []string{},
 									subGroups: []*Group{
 										{
 											name:     "component",
-											path:     "bitbucket.org/kamiazya/tcho-cli/module/local/component",
+											path:     "bitbucket.org/kamiazya/tcho/cli/module/local/component",
 											packages: []string{},
 										},
 									},
@@ -57,12 +57,12 @@ var (
 				},
 				{
 					name:     "infrastructure",
-					path:     "bitbucket.org/kamiazya/tcho/infrastructure",
+					path:     "bitbucket.org/kamiazya/tcho/core/infrastructure",
 					packages: []string{},
 					subGroups: []*Group{
 						{
 							name:      "database",
-							path:      "bitbucket.org/kamiazya/tcho/infrastructure/database",
+							path:      "bitbucket.org/kamiazya/tcho/core/infrastructure/database",
 							packages:  []string{},
 							subGroups: []*Group{},
 							line:      2,
@@ -71,30 +71,30 @@ var (
 				},
 				{
 					name:     "core",
-					path:     "bitbucket.org/kamiazya/tcho",
+					path:     "bitbucket.org/kamiazya/tcho/core",
 					packages: []string{},
 					line:     1,
 					subGroups: []*Group{
 						{
 							name:     "domain",
-							path:     "bitbucket.org/kamiazya/tcho/domain",
+							path:     "bitbucket.org/kamiazya/tcho/core/domain",
 							packages: []string{},
 							subGroups: []*Group{
 								{
 									name:     "model",
-									path:     "bitbucket.org/kamiazya/tcho/domain/model",
+									path:     "bitbucket.org/kamiazya/tcho/core/domain/model",
 									packages: []string{},
 									line:     1,
 								},
 								{
 									name:     "repository",
-									path:     "bitbucket.org/kamiazya/tcho/domain/repository",
+									path:     "bitbucket.org/kamiazya/tcho/core/domain/repository",
 									packages: []string{},
 									line:     2,
 								},
 								{
 									name:     "value",
-									path:     "bitbucket.org/kamiazya/tcho/domain/value",
+									path:     "bitbucket.org/kamiazya/tcho/core/domain/value",
 									packages: []string{},
 									line:     1,
 								},
@@ -102,12 +102,12 @@ var (
 						},
 						{
 							name:     "application",
-							path:     "bitbucket.org/kamiazya/tcho/application",
+							path:     "bitbucket.org/kamiazya/tcho/core/application",
 							packages: []string{},
 							subGroups: []*Group{
 								{
 									name:     "usecase",
-									path:     "bitbucket.org/kamiazya/tcho/application/usecase",
+									path:     "bitbucket.org/kamiazya/tcho/core/application/usecase",
 									packages: []string{},
 								},
 							},
@@ -126,7 +126,7 @@ var (
 
 func main() {
 
-	pkgRoot := "bitbucket.org/kamiazya/tcho-cli"
+	pkgRoot := "bitbucket.org/kamiazya/tcho/cli"
 	pkg := scanPackage(pkgRoot)
 	pkg.group()
 
