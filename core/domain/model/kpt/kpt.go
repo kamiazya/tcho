@@ -3,8 +3,8 @@ package kpt
 import (
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/domain/model"
-	"bitbucket.org/kamiazya/tcho/domain/value/memo"
+	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
+	"bitbucket.org/kamiazya/tcho/core/domain/model"
 )
 
 type Kpt struct {

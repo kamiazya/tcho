@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"bitbucket.org/kamiazya/tcho-cli/i18n"
+	"bitbucket.org/kamiazya/tcho/cli/i18n"
 	"gopkg.in/urfave/cli.v2"
 )
 

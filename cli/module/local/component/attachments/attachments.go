@@ -23,7 +23,7 @@ func ContextFunc(contextFunc func() context.Context) Option {
 	}
 }
 
-func NewComponent(uc attachment.UseCase, opts ...Option) (component.Component, error) {
+func NewComponent(uc usecase.AttachmentUseCase, opts ...Option) (component.Component, error) {
 	c := &attachments{
 		uc: uc,
 	}

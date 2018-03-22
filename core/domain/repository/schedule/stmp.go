@@ -3,7 +3,7 @@ package schedule
 import (
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/domain/model"
+	"bitbucket.org/kamiazya/tcho/core/domain/model"
 )
 
 type Stmp struct {

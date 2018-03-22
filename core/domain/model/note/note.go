@@ -3,11 +3,11 @@ package note
 import (
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/domain/model"
-	"bitbucket.org/kamiazya/tcho/domain/model/attachment"
-	"bitbucket.org/kamiazya/tcho/domain/model/link"
-	"bitbucket.org/kamiazya/tcho/domain/model/tag"
-	"bitbucket.org/kamiazya/tcho/domain/value/memo"
+	"bitbucket.org/kamiazya/tcho/core/domain/model/tag"
+	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
+	"bitbucket.org/kamiazya/tcho/core/domain/model"
+	"bitbucket.org/kamiazya/tcho/core/domain/model/attachment"
+	"bitbucket.org/kamiazya/tcho/core/domain/model/link"
 )
 
 type Note struct {

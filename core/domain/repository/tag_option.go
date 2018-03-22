@@ -4,7 +4,7 @@ import "bitbucket.org/kamiazya/tcho/core/domain/model"
 
 type TagSearchOption func(*TagStmp) error
 
-func ById(id model.ID) TagSearchOption {
+func TagById(id model.ID) TagSearchOption {
 	return func(stmp *TagStmp) error {
 		if stmp.ByIDs != nil {
 			return ErrOptionAlreadySeted
@@ -14,7 +14,7 @@ func ById(id model.ID) TagSearchOption {
 	}
 }
 
-func ByIds(ids ...model.ID) TagSearchOption {
+func TagByIds(ids ...model.ID) TagSearchOption {
 	return func(stmp *TagStmp) error {
 		if stmp.ByIDs != nil {
 			return ErrOptionAlreadySeted
@@ -24,7 +24,7 @@ func ByIds(ids ...model.ID) TagSearchOption {
 	}
 }
 
-func NameLike(name string) TagSearchOption {
+func TagNameLike(name string) TagSearchOption {
 	return func(stmp *TagStmp) error {
 		if stmp.NameLike != nil {
 			return ErrOptionAlreadySeted
@@ -34,7 +34,7 @@ func NameLike(name string) TagSearchOption {
 	}
 }
 
-func Limit(limit uint) TagSearchOption {
+func TagLimit(limit uint) TagSearchOption {
 	return func(stmp *TagStmp) error {
 		if stmp.Limit != nil {
 			return ErrOptionAlreadySeted
@@ -44,7 +44,7 @@ func Limit(limit uint) TagSearchOption {
 	}
 }
 
-func Offset(offset uint) TagSearchOption {
+func TagOffset(offset uint) TagSearchOption {
 	return func(stmp *TagStmp) error {
 		if stmp.Offset != nil {
 			return ErrOptionAlreadySeted

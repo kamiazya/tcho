@@ -47,12 +47,12 @@ func (p *localModule) Build() error {
 	repos := sqlite.RepositoryContainer(p.db, model.Tag, model.Attachment)
 
 	// usecase
-	tagUsecase, err := usecase.New(repos)
+	tagUsecase, err := usecase.NewTagUseCase(repos)
 	if err != nil {
 		return err
 	}
 
-	attachmentUsecase, err := attachmentuc.New(repos)
+	attachmentUsecase, err := usecase.NewAttachmentUseCase(repos)
 	if err != nil {
 		return err
 	}

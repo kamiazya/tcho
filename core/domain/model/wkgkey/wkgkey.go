@@ -3,9 +3,9 @@ package wkgkey
 import (
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/domain/model"
-	"bitbucket.org/kamiazya/tcho/domain/value/colorcode"
-	"bitbucket.org/kamiazya/tcho/domain/value/memo"
+	"bitbucket.org/kamiazya/tcho/core/domain/value/colorcode"
+	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
+	"bitbucket.org/kamiazya/tcho/core/domain/model"
 )
 
 type WorkingKey struct {

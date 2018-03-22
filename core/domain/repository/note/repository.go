@@ -3,8 +3,8 @@ package note
 import (
 	"context"
 
-	"bitbucket.org/kamiazya/tcho/domain/model"
-	"bitbucket.org/kamiazya/tcho/domain/model/schedule"
+	"bitbucket.org/kamiazya/tcho/core/domain/model"
+	"bitbucket.org/kamiazya/tcho/core/domain/model/schedule"
 )
 
 type Repository interface {

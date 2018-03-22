@@ -2,55 +2,54 @@ package repository
 
 import (
 	"bitbucket.org/kamiazya/tcho/core/domain/model"
-	"bitbucket.org/kamiazya/tcho/core/domain/repository"
 )
 
 type AttachmentSearchOption func(*AttachmentStmp) error
 
-func ById(id model.ID) AttachmentSearchOption {
+func AttachmentById(id model.ID) AttachmentSearchOption {
 	return func(stmp *AttachmentStmp) error {
 		if stmp.ByIDs != nil {
-			return repository.ErrOptionAlreadySeted
+			return ErrOptionAlreadySeted
 		}
 		stmp.ByIDs = []model.ID{id}
 		return nil
 	}
 }
 
-func ByIds(ids ...model.ID) AttachmentSearchOption {
+func AttachmentByIds(ids ...model.ID) AttachmentSearchOption {
 	return func(stmp *AttachmentStmp) error {
 		if stmp.ByIDs != nil {
-			return repository.ErrOptionAlreadySeted
+			return ErrOptionAlreadySeted
 		}
 		stmp.ByIDs = ids
 		return nil
 	}
 }
 
-func NameLike(name string) AttachmentSearchOption {
+func AttachmentNameLike(name string) AttachmentSearchOption {
 	return func(stmp *AttachmentStmp) error {
 		if stmp.NameLike != nil {
-			return repository.ErrOptionAlreadySeted
+			return ErrOptionAlreadySeted
 		}
 		stmp.NameLike = &name
 		return nil
 	}
 }
 
-func Limit(limit uint) AttachmentSearchOption {
+func AttachmentLimit(limit uint) AttachmentSearchOption {
 	return func(stmp *AttachmentStmp) error {
 		if stmp.Limit != nil {
-			return repository.ErrOptionAlreadySeted
+			return ErrOptionAlreadySeted
 		}
 		stmp.Limit = &limit
 		return nil
 	}
 }
 
-func Offset(offset uint) AttachmentSearchOption {
+func AttachmentOffset(offset uint) AttachmentSearchOption {
 	return func(stmp *AttachmentStmp) error {
 		if stmp.Offset != nil {
-			return repository.ErrOptionAlreadySeted
+			return ErrOptionAlreadySeted
 		}
 		stmp.Offset = &offset
 		return nil

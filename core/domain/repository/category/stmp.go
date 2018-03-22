@@ -1,8 +1,8 @@
 package category
 
 import (
-	"bitbucket.org/kamiazya/tcho/domain/model"
-	"bitbucket.org/kamiazya/tcho/domain/model/category"
+	"bitbucket.org/kamiazya/tcho/core/domain/model"
+	"bitbucket.org/kamiazya/tcho/core/domain/model/category"
 )
 
 type Stmp struct {

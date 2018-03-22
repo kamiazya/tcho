@@ -28,7 +28,7 @@ func ContextFunc(contextFunc func() context.Context) Option {
 	}
 }
 
-func NewComponent(uc tag.UseCase, opts ...Option) (component.Component, error) {
+func NewComponent(uc usecase.TagUseCase, opts ...Option) (component.Component, error) {
 	c := &tagComponent{
 		uc:                 uc,
 		TechoCliMemoEditor: editor.Default,

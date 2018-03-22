@@ -18,7 +18,7 @@ import (
 	"bitbucket.org/kamiazya/tcho/core/infrastructure/database"
 )
 
-var _ repository.Repository = new(attachmentRepository)
+var _ repository.AttachmentRepository = new(attachmentRepository)
 
 type attachmentRepository struct {
 	db      *sql.DB
@@ -82,8 +82,8 @@ func (repo *attachmentRepository) decode(row *attachmentSchema) (a *attachment.A
 	return
 }
 
-func (repo *attachmentRepository) selectQuery(opts ...repository.SearchOption) (query string, args []interface{}, err error) {
-	stmp := new(repository.Stmp)
+func (repo *attachmentRepository) selectQuery(opts ...repository.AttachmentSearchOption) (query string, args []interface{}, err error) {
+	stmp := new(repository.AttachmentStmp)
 	for _, opt := range opts {
 		if err = opt(stmp); err != nil {
 			return "", nil, err
@@ -136,8 +136,8 @@ func (repo *attachmentRepository) selectQuery(opts ...repository.SearchOption) (
 	return queryBuf.String(), args, nil
 }
 
-func (repo *attachmentRepository) One(ctx context.Context, opts ...repository.SearchOption) (*attachment.Attachment, error) {
-	opts = append(opts, repository.Limit(1))
+func (repo *attachmentRepository) One(ctx context.Context, opts ...repository.AttachmentSearchOption) (*attachment.Attachment, error) {
+	opts = append(opts, repository.AttachmentLimit(1))
 	query, args, queryErr := repo.selectQuery(opts...)
 	if queryErr != nil {
 		return nil, queryErr
@@ -231,7 +231,7 @@ func (repo *attachmentRepository) File(ctx context.Context, ID model.ID) (reader
 	return bytes.NewReader(bs), nil
 }
 
-func (repo *attachmentRepository) List(ctx context.Context, opts ...repository.SearchOption) ([]*attachment.Attachment, error) {
+func (repo *attachmentRepository) List(ctx context.Context, opts ...repository.AttachmentSearchOption) ([]*attachment.Attachment, error) {
 	query, args, queryErr := repo.selectQuery(opts...)
 	if queryErr != nil {
 		return nil, queryErr

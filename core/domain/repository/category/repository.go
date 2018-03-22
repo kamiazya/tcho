@@ -3,8 +3,8 @@ package category
 import (
 	"context"
 
-	"bitbucket.org/kamiazya/tcho/domain/model"
-	"bitbucket.org/kamiazya/tcho/domain/model/category"
+	"bitbucket.org/kamiazya/tcho/core/domain/model"
+	"bitbucket.org/kamiazya/tcho/core/domain/model/category"
 )
 
 type Repository interface {

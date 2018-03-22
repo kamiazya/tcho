@@ -13,7 +13,7 @@ import (
 	"bitbucket.org/kamiazya/tcho/core/domain/repository"
 	"bitbucket.org/kamiazya/tcho/core/domain/value/colorcode"
 	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
-	"bitbucket.org/kamiazya/tcho/infrastructure/database"
+	"bitbucket.org/kamiazya/tcho/core/infrastructure/database"
 )
 
 var _ repository.TagRepository = new(tagRepository)
@@ -78,8 +78,8 @@ func (repo *tagRepository) decode(row *tagSchema) (t *tag.Tag) {
 	return
 }
 
-func (repo *tagRepository) selectQuery(opts ...repository.SearchOption) (query string, args []interface{}, err error) {
-	stmp := new(repository.Stmp)
+func (repo *tagRepository) selectQuery(opts ...repository.TagSearchOption) (query string, args []interface{}, err error) {
+	stmp := new(repository.TagStmp)
 	for _, opt := range opts {
 		if err = opt(stmp); err != nil {
 			return "", nil, err
@@ -131,8 +131,8 @@ func (repo *tagRepository) selectQuery(opts ...repository.SearchOption) (query s
 	return queryBuf.String(), args, nil
 }
 
-func (repo *tagRepository) One(ctx context.Context, opts ...repository.SearchOption) (*tag.Tag, error) {
-	opts = append(opts, repository.Limit(1))
+func (repo *tagRepository) One(ctx context.Context, opts ...repository.TagSearchOption) (*tag.Tag, error) {
+	opts = append(opts, repository.TagLimit(1))
 	query, args, queryErr := repo.selectQuery(opts...)
 	if queryErr != nil {
 		return nil, queryErr
@@ -154,7 +154,7 @@ func (repo *tagRepository) One(ctx context.Context, opts ...repository.SearchOpt
 	return t, nil
 }
 
-func (repo *tagRepository) List(ctx context.Context, opts ...repository.SearchOption) ([]*tag.Tag, error) {
+func (repo *tagRepository) List(ctx context.Context, opts ...repository.TagSearchOption) ([]*tag.Tag, error) {
 	query, args, queryErr := repo.selectQuery(opts...)
 	if queryErr != nil {
 		return nil, queryErr

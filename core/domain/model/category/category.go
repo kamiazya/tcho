@@ -3,10 +3,10 @@ package category
 import (
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/domain/model"
-	"bitbucket.org/kamiazya/tcho/domain/model/wkgkey"
-	"bitbucket.org/kamiazya/tcho/domain/value/colorcode"
-	"bitbucket.org/kamiazya/tcho/domain/value/memo"
+	"bitbucket.org/kamiazya/tcho/core/domain/value/colorcode"
+	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
+	"bitbucket.org/kamiazya/tcho/core/domain/model"
+	"bitbucket.org/kamiazya/tcho/core/domain/model/wkgkey"
 )
 
 type Category struct {

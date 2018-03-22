@@ -3,7 +3,7 @@ package note
 import (
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/domain/model"
+	"bitbucket.org/kamiazya/tcho/core/domain/model"
 	"bitbucket.org/kamiazya/tcho/domain/repository"
 )
 

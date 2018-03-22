@@ -8,8 +8,8 @@ import (
 )
 
 type TagRepository interface {
-	One(ctx context.Context, opts ...SearchOption) (*tag.Tag, error)
-	List(ctx context.Context, opts ...SearchOption) ([]*tag.Tag, error)
+	One(ctx context.Context, opts ...TagSearchOption) (*tag.Tag, error)
+	List(ctx context.Context, opts ...TagSearchOption) ([]*tag.Tag, error)
 
 	Update(ctx context.Context, t *tag.Tag) (err error)
 	Store(ctx context.Context, t *tag.Tag) (ID model.ID, err error)

@@ -5,10 +5,10 @@ import (
 
 	"github.com/k0kubun/pp"
 
-	"bitbucket.org/kamiazya/tcho-cli/i18n"
-	model "bitbucket.org/kamiazya/tcho/domain/model/tag"
-	"bitbucket.org/kamiazya/tcho/domain/value/colorcode"
-	"bitbucket.org/kamiazya/tcho/domain/value/memo"
+	"bitbucket.org/kamiazya/tcho/cli/i18n"
+	model "bitbucket.org/kamiazya/tcho/core/domain/model/tag"
+	"bitbucket.org/kamiazya/tcho/core/domain/value/colorcode"
+	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
 	"gopkg.in/urfave/cli.v2"
 )
 
