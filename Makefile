@@ -2,7 +2,7 @@
 
 NO_MAKE_DIR= ./.git% ./data% ./doc%
 
-PACKAGE     = bitbucket.org/kamiazya/tcho
+PACKAGE     = github.com/kamiazya/tcho
 PACKAGE_NAME     = tcho
 BASE        = $(GOPATH)/src/$(PACKAGE)
 # tcho_DIR  = $(HOME)/.config/tcho

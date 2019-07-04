@@ -1,8 +1,8 @@
 package kpt
 
 import (
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/kpt"
+	"github.com/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/core/domain/model/kpt"
 )
 
 type Stmp struct {

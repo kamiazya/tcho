@@ -1,7 +1,7 @@
 package pubsub
 
 import (
-	"bitbucket.org/kamiazya/tcho/application/event/pubsub"
+	"github.com/kamiazya/tcho/application/event/pubsub"
 	"github.com/go-mangos/mangos/protocol/pub"
 	"github.com/go-mangos/mangos/transport/all"
 	"github.com/go-mangos/mangos/transport/inproc"

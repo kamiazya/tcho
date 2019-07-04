@@ -3,7 +3,7 @@ package sqlite
 import (
 	"strconv"
 
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/core/domain/model"
 )
 
 var _ model.ID = new(intID)

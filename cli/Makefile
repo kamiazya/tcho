@@ -1,7 +1,7 @@
 .PHONY: run run-ja create clean deps doc
 
 PACKAGE_NAME     = tcho-cli
-PACKAGE     = bitbucket.org/kamiazya/$(PACKAGE_NAME)
+PACKAGE     = github.com/kamiazya/$(PACKAGE_NAME)
 VERSION = 0.0.0
 Revision = $(shell git rev-parse HEAD)
 
@@ -38,7 +38,7 @@ clean:
 	@rm ./data/tcho.sqlite
 
 deps:
-	godepgraph -s bitbucket.org/kamiazya/tcho-cli | dot -Kdot -Grankdir=LR -Tpng -o deps.png
+	godepgraph -s github.com/kamiazya/tcho-cli | dot -Kdot -Grankdir=LR -Tpng -o deps.png
 
 doc:
 	@SUB_PKGS="$(SUB_PKGS)";\

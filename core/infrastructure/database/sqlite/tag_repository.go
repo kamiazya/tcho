@@ -8,12 +8,12 @@ import (
 	"strings"
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/tag"
-	"bitbucket.org/kamiazya/tcho/core/domain/repository"
-	"bitbucket.org/kamiazya/tcho/core/domain/value/colorcode"
-	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
-	"bitbucket.org/kamiazya/tcho/core/infrastructure/database"
+	"github.com/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/core/domain/model/tag"
+	"github.com/kamiazya/tcho/core/domain/repository"
+	"github.com/kamiazya/tcho/core/domain/value/colorcode"
+	"github.com/kamiazya/tcho/core/domain/value/memo"
+	"github.com/kamiazya/tcho/core/infrastructure/database"
 )
 
 var _ repository.TagRepository = new(tagRepository)

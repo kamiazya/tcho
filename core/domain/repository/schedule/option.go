@@ -3,8 +3,8 @@ package schedule
 import (
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
-	"bitbucket.org/kamiazya/tcho/domain/repository"
+	"github.com/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/domain/repository"
 )
 
 type SearchOption func(*Stmp) error

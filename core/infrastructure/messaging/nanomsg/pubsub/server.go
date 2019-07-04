@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/application/event/pubsub"
+	"github.com/kamiazya/tcho/application/event/pubsub"
 	"github.com/go-mangos/mangos"
 )
 

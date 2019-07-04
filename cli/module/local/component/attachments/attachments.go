@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"bitbucket.org/kamiazya/tcho/cli/adapter/component"
-	"bitbucket.org/kamiazya/tcho/cli/extarnal"
-	"bitbucket.org/kamiazya/tcho/cli/i18n"
-	"bitbucket.org/kamiazya/tcho/core/application/usecase"
+	"github.com/kamiazya/tcho/cli/adapter/component"
+	"github.com/kamiazya/tcho/cli/extarnal"
+	"github.com/kamiazya/tcho/cli/i18n"
+	"github.com/kamiazya/tcho/core/application/usecase"
 	r "github.com/chzyer/readline"
 	"gopkg.in/urfave/cli.v2"
 )

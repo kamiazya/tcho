@@ -1,9 +1,9 @@
 package kpt
 
 import (
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/kpt"
-	"bitbucket.org/kamiazya/tcho/domain/repository"
+	"github.com/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/core/domain/model/kpt"
+	"github.com/kamiazya/tcho/domain/repository"
 )
 
 var (

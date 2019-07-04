@@ -1,8 +1,8 @@
 package location
 
 import (
-	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/core/domain/value/memo"
+	"github.com/kamiazya/tcho/core/domain/model"
 )
 
 type Location struct {

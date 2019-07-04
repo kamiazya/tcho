@@ -1,6 +1,6 @@
 package wkgvalue
 
-import "bitbucket.org/kamiazya/tcho/core/domain/model"
+import "github.com/kamiazya/tcho/core/domain/model"
 
 type Stmp struct {
 	Key  model.ID

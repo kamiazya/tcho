@@ -1,7 +1,7 @@
 package extarnal
 
 import (
-	"bitbucket.org/kamiazya/tcho/core/domain/value/colorcode"
+	"github.com/kamiazya/tcho/core/domain/value/colorcode"
 	"github.com/fatih/color"
 )
 

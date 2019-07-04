@@ -3,10 +3,10 @@ package usecase
 import (
 	"context"
 
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/tag"
-	"bitbucket.org/kamiazya/tcho/core/domain/repository"
-	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
+	"github.com/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/core/domain/model/tag"
+	"github.com/kamiazya/tcho/core/domain/repository"
+	"github.com/kamiazya/tcho/core/domain/value/memo"
 )
 
 var _ TagUseCase = new(tagUseCase)

@@ -3,8 +3,8 @@ package wkgkey
 import (
 	"context"
 
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/link"
+	"github.com/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/core/domain/model/link"
 )
 
 type Repository interface {

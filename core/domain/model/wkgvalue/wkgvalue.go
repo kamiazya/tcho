@@ -3,7 +3,7 @@ package wkgvalue
 import (
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/core/domain/model/wkgkey"
+	"github.com/kamiazya/tcho/core/domain/model/wkgkey"
 )
 
 type WorkingValue struct {

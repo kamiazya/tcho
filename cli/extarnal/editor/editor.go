@@ -3,7 +3,7 @@ package editor
 import (
 	"os"
 
-	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
+	"github.com/kamiazya/tcho/core/domain/value/memo"
 )
 
 type TechoCliMemoEditor interface {

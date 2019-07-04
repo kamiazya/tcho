@@ -3,15 +3,15 @@ package schedule
 import (
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/core/domain/model/tag"
-	"bitbucket.org/kamiazya/tcho/core/domain/value/colorcode"
-	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/attachment"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/category"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/location"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/note"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/task"
+	"github.com/kamiazya/tcho/core/domain/model/tag"
+	"github.com/kamiazya/tcho/core/domain/value/colorcode"
+	"github.com/kamiazya/tcho/core/domain/value/memo"
+	"github.com/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/core/domain/model/attachment"
+	"github.com/kamiazya/tcho/core/domain/model/category"
+	"github.com/kamiazya/tcho/core/domain/model/location"
+	"github.com/kamiazya/tcho/core/domain/model/note"
+	"github.com/kamiazya/tcho/core/domain/model/task"
 )
 
 type Schedule struct {

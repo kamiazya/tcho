@@ -4,9 +4,9 @@ import (
 	"context"
 	"io"
 
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/attachment"
-	"bitbucket.org/kamiazya/tcho/core/infrastructure/database"
+	"github.com/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/core/domain/model/attachment"
+	"github.com/kamiazya/tcho/core/infrastructure/database"
 )
 
 // NewAttachmentUseCase returns AttachmentUseCase.

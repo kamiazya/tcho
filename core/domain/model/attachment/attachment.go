@@ -3,9 +3,9 @@ package attachment
 import (
 	"time"
 
-	"bitbucket.org/kamiazya/tcho/core/domain/model/tag"
-	"bitbucket.org/kamiazya/tcho/core/domain/value/memo"
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/core/domain/model/tag"
+	"github.com/kamiazya/tcho/core/domain/value/memo"
+	"github.com/kamiazya/tcho/core/domain/model"
 )
 
 type Attachment struct {

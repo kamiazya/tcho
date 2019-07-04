@@ -3,8 +3,8 @@ package wkgvalue
 import (
 	"context"
 
-	"bitbucket.org/kamiazya/tcho/core/domain/model"
-	"bitbucket.org/kamiazya/tcho/core/domain/model/wkgvalue"
+	"github.com/kamiazya/tcho/core/domain/model"
+	"github.com/kamiazya/tcho/core/domain/model/wkgvalue"
 )
 
 type Repository interface {

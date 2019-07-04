@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"bitbucket.org/kamiazya/tcho/cli/module"
-	"bitbucket.org/kamiazya/tcho/cli/module/local"
+	"github.com/kamiazya/tcho/cli/module"
+	"github.com/kamiazya/tcho/cli/module/local"
 	_ "github.com/mattn/go-sqlite3"
 )
 

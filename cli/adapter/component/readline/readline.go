@@ -1,7 +1,7 @@
 package readline
 
 import (
-	"bitbucket.org/kamiazya/tcho/cli/adapter/component"
+	"github.com/kamiazya/tcho/cli/adapter/component"
 	"github.com/chzyer/readline"
 	"gopkg.in/urfave/cli.v2"
 )
